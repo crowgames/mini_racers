@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    if ("ondeviceorientation" in window) {
+        window.addEventListener('deviceorientation', function(event) {
+            alert(event);
+        });
+    } else {
+        alert("Sorry, your browser doesn't support Device Orientation");
+    }
+</script>
+    <iframe src="http://192.168.188.43:8080">
+
+    </iframe>
+</body>
+</html>
