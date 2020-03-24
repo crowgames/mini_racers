@@ -9,7 +9,7 @@
 <script type="text/javascript">
     if ("ondeviceorientation" in window) {
         window.addEventListener('deviceorientation', function(event) {
-            alert(event);
+            parent.postMessage(event.beta+"",'*');
         });
     } else {
         alert("Sorry, your browser doesn't support Device Orientation");
